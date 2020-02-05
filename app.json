@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/demo01/index",
+    "pages/logs/logs"
+  ],
+ "window": {
+   "navigationBarBackgroundColor": "#890088",
+   "navigationBarTextStyle": "white",
+   "navigationBarTitleText": "demo01",
+   "backgroundColor": "#eeeeee",
+   "backgroundTextStyle": "light",
+   "enablePullDownRefresh": false
+ },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
