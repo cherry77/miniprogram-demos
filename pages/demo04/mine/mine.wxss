@@ -1,0 +1,21 @@
+/* 登录 */
+.login{
+  width: 100%;
+  height: 400rpx;
+  background: #1296db;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.login image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.login text{
+  color: #fff;
+}
+/* 收藏列表 */
+.collect{
+  padding: 10rpx;
+}

@@ -1,10 +1,13 @@
 {
   "pages": [
-    "pages/demo03/index",
+    "pages/demo04/index/index",
+    "pages/demo04/detail/detail",
+    "pages/demo04/mine/mine",
     "pages/index/index",
     "pages/logs/logs",
     "pages/demo01/index",
-    "pages/demo02/index"
+    "pages/demo02/index",
+    "pages/demo03/index"
     
   ],
   "window": {
@@ -14,6 +17,26 @@
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light",
     "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#1296db",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/demo04/index/index",
+        "text": "首页",
+        "iconPath": "pages/demo04/resource/images/home_un.png",
+        "selectedIconPath": "pages/demo04/resource/images/home.png"
+      },
+      {
+        "pagePath": "pages/demo04/mine/mine",
+        "text": "我的",
+        "iconPath": "pages/demo04/resource/images/mine_un.png",
+        "selectedIconPath": "pages/demo04/resource/images/mine.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

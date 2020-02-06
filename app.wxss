@@ -1,10 +1,20 @@
 /**app.wxss**/
-/* .container {
-  height: 100%;
+/* 新闻列表 收藏列表*/
+.news-list{
+  min-height: 600rpx;
+  padding: 10rpx;
+}
+.news-item{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-}  */
+  border-bottom: 1px solid #dbdbdb;
+  /* align-items: center; */
+}
+.news-item image{
+  width: 230rpx;
+  height: 150rpx;
+  margin: 10rpx;
+}
+.news-item text{
+  width: 100%; /*flex-direction: row,容器内盒子默认均摊,现在左侧的image有宽度了，给右侧盒子宽度设为100%，内容在全部剩余空间中排列，不会挤左边盒子*/
+  line-height: 60rpx;
+}

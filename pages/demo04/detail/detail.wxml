@@ -1,0 +1,11 @@
+<view class="news-detail">
+  <view class="news-title">{{article.title}}</view>
+  <image src="{{article.poster}}"></image>
+  <view class="content">
+  <!-- text组件才能识别换行 -->
+    <text>{{article.content}}</text>
+  </view>
+  <view class="date">{{article.add_date}}</view>
+  <button wx:if="{{isAdd}}" plain bindtap="removeCollect">已收藏❤</button>
+  <button wx:else plain bindtap="addCollect">收藏❤</button>
+</view>
