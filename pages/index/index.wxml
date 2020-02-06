@@ -1,0 +1,5 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <navigator url="/pages/demo01/index">Demo01</navigator>
+  <navigator url="/pages/demo02/index">Demo02</navigator>
+</view>

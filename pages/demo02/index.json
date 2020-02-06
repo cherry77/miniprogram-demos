@@ -1,8 +1,8 @@
 {
   "usingComponents": {},
-  "navigationBarBackgroundColor": "#890088",
+  "navigationBarBackgroundColor": "#22DDDD",
   "navigationBarTextStyle": "white",
-  "navigationBarTitleText": "demo01-获取昵称和头像",
+  "navigationBarTitleText": "demo02-今日天气",
   "backgroundColor": "#eeeeee",
   "backgroundTextStyle": "light",
   "enablePullDownRefresh": false

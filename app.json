@@ -1,16 +1,18 @@
 {
   "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
     "pages/demo01/index",
-    "pages/logs/logs"
+    "pages/demo02/index"
   ],
- "window": {
-   "navigationBarBackgroundColor": "#890088",
-   "navigationBarTextStyle": "white",
-   "navigationBarTitleText": "demo01",
-   "backgroundColor": "#eeeeee",
-   "backgroundTextStyle": "light",
-   "enablePullDownRefresh": false
- },
+  "window": {
+    "navigationBarBackgroundColor": "#FF0000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "Demos",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
