@@ -1,9 +1,11 @@
 {
   "pages": [
+    "pages/demo03/index",
     "pages/index/index",
     "pages/logs/logs",
     "pages/demo01/index",
     "pages/demo02/index"
+    
   ],
   "window": {
     "navigationBarBackgroundColor": "#FF0000",

@@ -1,5 +1,6 @@
 <!--pages/index/index.wxml-->
 <view class="container">
-  <navigator url="/pages/demo01/index">Demo01</navigator>
-  <navigator url="/pages/demo02/index">Demo02</navigator>
+  <navigator url="/pages/demo01/index">Demo01-获取头像和昵称</navigator>
+  <navigator url="/pages/demo02/index">Demo02-今日天气</navigator>
+  <navigator url="/pages/demo03/index">Demo03-视频播放</navigator>
 </view>
