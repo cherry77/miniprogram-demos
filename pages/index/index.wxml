@@ -1,4 +1,0 @@
-<!--pages/index/index.wxml-->
-<view class="container">
-  <view class="demo-item" wx:for="{{demoList}}" wx:key="id" bindtap="goToDemo" data-url="{{item.url}}">{{item.title}}</view>
-</view>

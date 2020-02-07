@@ -1,9 +1,0 @@
-{
-  "usingComponents": {},
-  "navigationBarBackgroundColor": "#22DDDD",
-  "navigationBarTextStyle": "white",
-  "navigationBarTitleText": "demo02-今日天气",
-  "backgroundColor": "#eeeeee",
-  "backgroundTextStyle": "light",
-  "enablePullDownRefresh": false
-}
