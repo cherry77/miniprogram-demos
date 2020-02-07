@@ -7,7 +7,9 @@
     "pages/demo03/index",
     "pages/demo04/index/index",
     "pages/demo04/detail/detail",
-    "pages/demo04/mine/mine"
+    "pages/demo04/mine/mine",
+    "pages/demo05/home/index",
+    "pages/demo05/home/home"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FF0000",
@@ -25,16 +27,22 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/demo04/index/index",
         "text": "首页",
+        "pagePath": "pages/demo04/index/index",
         "iconPath": "pages/demo04/resource/images/home_un.png",
         "selectedIconPath": "pages/demo04/resource/images/home.png"
       },
       {
-        "pagePath": "pages/demo04/mine/mine",
         "text": "我的",
+        "pagePath": "pages/demo04/mine/mine",
         "iconPath": "pages/demo04/resource/images/mine_un.png",
         "selectedIconPath": "pages/demo04/resource/images/mine.png"
+      },
+      {
+        "text": "首页",
+        "pagePath": "pages/demo05/home/index",
+        "iconPath": "pages/demo05/resource/images/index/index_blur.png",
+        "selectedIconPath": "pages/demo05/resource/images/index/index_focus.png"
       }
     ]
   },

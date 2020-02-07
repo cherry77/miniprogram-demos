@@ -1,6 +1,15 @@
 // pages/demo04/mine/mine.js
-Page({
-
+Component({
+  pageLifetimes: {
+    show() {
+      if (typeof this.getTabBar === 'function' &&
+        this.getTabBar()) {
+        this.getTabBar().setData({
+          selected: 1
+        })
+      }
+    }
+  },
   /**
    * 页面的初始数据
    */

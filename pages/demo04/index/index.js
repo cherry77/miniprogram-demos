@@ -1,7 +1,17 @@
 // pages/demo04/index/index.js
+// 不能在组件页面写生命周期，目标页面加这段，但是会取代目标页面Page（），正常的组件是在自己组件写pagelifetimes并且会被调用，但是自定义tabbar就必须目标页面用component了。
 const api = require('./../api/api.js')
-Page({
-
+Component({
+  pageLifetimes: {
+    show() {
+      if (typeof this.getTabBar === 'function' &&
+        this.getTabBar()) {
+        this.getTabBar().setData({
+          selected: 0
+        })
+      }
+    }
+  },
   /**
    * 页面的初始数据
    */
@@ -13,71 +23,27 @@ Page({
     ],
     newsList: []
   },
-  goToDetail: function(e){
-    //获取携带data-id的数据
-    let id = e.currentTarget.dataset.id;
-    //携带新闻id进行跳转
-    wx.navigateTo({
-      url: './../detail/detail?id='+id,
-    })
+  
+  lifetimes: {
+    attached: function () {
+      // 在组件实例进入页面节点树时执行
+      let newsList = api.getNewsList();
+      this.setData({
+        newsList
+      })
+    },
+    detached: function () {
+      // 在组件实例被从页面节点树移除时执行
+    },
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-    let newsList = api.getNewsList();
-    this.setData({
-      newsList
-    })
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  methods: {
+    goToDetail: function (e) {
+      //获取携带data-id的数据
+      let id = e.currentTarget.dataset.id;
+      //携带新闻id进行跳转
+      wx.navigateTo({
+        url: './../detail/detail?id=' + id,
+      })
+    }
   }
 })
