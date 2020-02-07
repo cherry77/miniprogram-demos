@@ -1,14 +1,13 @@
 {
   "pages": [
-    "pages/demo04/index/index",
-    "pages/demo04/detail/detail",
-    "pages/demo04/mine/mine",
     "pages/index/index",
     "pages/logs/logs",
     "pages/demo01/index",
     "pages/demo02/index",
-    "pages/demo03/index"
-    
+    "pages/demo03/index",
+    "pages/demo04/index/index",
+    "pages/demo04/detail/detail",
+    "pages/demo04/mine/mine"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FF0000",
@@ -19,6 +18,7 @@
     "enablePullDownRefresh": false
   },
   "tabBar": {
+    "custom": true,
     "color": "#bfbfbf",
     "selectedColor": "#1296db",
     "borderStyle": "black",

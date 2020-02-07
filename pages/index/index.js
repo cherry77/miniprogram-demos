@@ -5,7 +5,38 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    demoList: [
+      {
+        id: 'demo01',
+        title: 'Demo01-获取头像和昵称',
+        url: '/pages/demo01/index'
+      },
+      {
+        id: 'demo012',
+        title: 'Demo02-今日天气',
+        url: '/pages/demo02/index'
+      },
+      {
+        id: 'demo03',
+        title: 'Demo03-视频播放',
+        url: '/pages/demo03/index'
+      },
+      {
+        id: 'demo04',
+        title: 'Demo04-登录收藏',
+        url: '/pages/demo04/index/index'
+      }
+    ]
+  },
+  goToDemo: function(e){
+    wx.navigateTo({
+      url: e.currentTarget.dataset.url,
+      fail: function () {
+        wx.switchTab({
+          url: e.currentTarget.dataset.url
+        })
+      }
+    })
   },
 
   /**
