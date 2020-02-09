@@ -1,0 +1,29 @@
+<view class="container">
+  <picker mode="region" bindchange="changeRegion">
+    <text>{{region}}</text>
+  </picker>
+  <text class="temperature">{{nowWeather.tmp}}℃{{nowWeather.cond_txt}}</text>
+  <image src="resource/images/{{nowWeather.cond_code?nowWeather.cond_code:999}}.png"></image>
+  <view class="detail">
+    <view class="list">
+      <text>湿度</text>
+      <text>气压</text>
+      <text>能见度</text>
+    </view>
+    <view class="list">
+      <text>{{nowWeather.hum}}%</text>
+      <text>{{nowWeather.pres}}hPa</text>
+      <text>{{nowWeather.vis}}km</text>
+    </view>
+    <view class="list">
+      <text>风向</text>
+      <text>风速</text>
+      <text>风力</text>
+    </view>
+    <view class="list">
+      <text>{{nowWeather.wind_dir}}</text>
+      <text>{{nowWeather.wind_spd}}km/h</text>
+      <text>{{nowWeather.wind_sc}}级</text>
+    </view>
+  </view>
+</view>

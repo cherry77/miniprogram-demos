@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/order/index",
+    "pages/mine/index",
+    "pages/menu/index",
+    "pages/cart/index",
+    "components/pages/index/today-top",
+    "components/pages/index/new-thing",
+    "components/pages/index/luckin-pop"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "luckin coffee",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false,
+    "backgroundColor": "#fff",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#333999",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "/resource/images/index/index_blur.png",
+        "selectedIconPath": "/resource/images/index/index_focus.png"
+      },
+      {
+        "pagePath": "pages/menu/index",
+        "text": "菜单",
+        "iconPath": "/resource/images/index/menu_blur.png",
+        "selectedIconPath": "/resource/images/index/menu_focus.png"
+      },
+      {
+        "pagePath": "pages/order/index",
+        "text": "订单",
+        "iconPath": "/resource/images/index/order_blur.png",
+        "selectedIconPath": "/resource/images/index/order_focus.png"
+      },
+      {
+        "pagePath": "pages/cart/index",
+        "text": "购物车",
+        "iconPath": "/resource/images/index/cart_blur.png",
+        "selectedIconPath": "/resource/images/index/cart_focus.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "/resource/images/index/mine_blur.png",
+        "selectedIconPath": "/resource/images/index/mine_focus.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

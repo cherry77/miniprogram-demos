@@ -1,0 +1,63 @@
+<import src="../../components/pages/index/today-top.wxml"></import>
+<import src="../../components/pages/index/new-thing.wxml"></import>
+<import src="../../components/pages/index/luckin-pop.wxml"></import>
+<view class="home">
+  <!-- 轮播部分 -->
+  <view class="banner-box" style="{{custom?'padding-top:'+custom.top+'px':''}}">
+      <view class="banner-radius" >
+          <swiper autoplay="{{autoplay}}" bindchange="bannerChange" circular="true" class="banner-swiper-box" duration="{{duration}}" id="homeTopBanner" indicatorActiveColor="#fff" indicatorColor="rgba(255, 255, 255, 0.5)" indicatorDots="{{indicatorDots}}" interval="{{interval}}">
+            <swiper-item wx:for="{{adPics}}" wx:key="index">
+              <image src="{{item.sourceUrl}}"></image>
+            </swiper-item>
+          </swiper>
+      </view>
+  </view>
+  <!-- 菜单box部分 -->
+  <view class="list-new-box">
+    <view class="list-new-bar">
+       <view class="menu">
+          <view class="menu-left posit">
+              <view bindtap="toMenu" class="menu-item" id="btn_toMenu" style="background-image: url('https://static.luckincoffeecdn.com/mini/images/home/ico_home_ad_menu.png')">
+                  <view class="item-title">现在下单</view>
+                  <view class="item-subtitle" style="padding-left: 16rpx">ORDER NOW</view>
+              </view>
+          </view>
+          <view class="menu-right posit">
+              <view bindtap="toWallet" class="menu-item" id="btn_toWallet">
+                  <view class="item-tip" style="background-image: url('https://static.luckincoffeecdn.com/mini/images/home/ico_discount_right.png')">{{menu.promotionMsg}}</view>
+                  <view class="item-title">咖啡钱包</view>
+                  <view class="item-subtitle">COFFEE WALLET</view>
+              </view>
+              <view bindtap="toSend" class="menu-item menu-item-bottom" id="btn_toSend">
+                  <view class="item-title">送TA咖啡</view>
+                  <view class="item-subtitle">SEND COFFEE</view>
+              </view>
+          </view>
+      </view>
+      <view class="menu-more">
+          <view class="menu-more-left">
+              <view bindtap="toCoupon" class="menu-item" id="btn_toCoupon" style="background-image: url('{{menu.couponImgUrl}}')">
+                  <view class="item-tip" style="background-image: url('https://static.luckincoffeecdn.com/mini/images/home/ico_discount_right.png')" wx:if="{{couponName&&couponTest===3}}">{{couponDisNum}}{{couponType==='discount'?'折':'元'}}{{couponName}}</view>
+                  <view class="item-title">我的优惠券</view>
+                  <view class="item-subtitle">MY COUPONS</view>
+              </view>
+          </view>
+          <view class="menu-more-left">
+              <view bindtap="toSelfMachine" class="menu-item" id="btn_toACup" style="background-image: url('https://static.luckincoffeecdn.com/mini/images/home/ico_home_ad_selfMachine.png')">
+                  <view class="item-tip" style="background-image: url('https://static.luckincoffeecdn.com/mini/images/home/ico_discount_right.png')">NEW</view>
+                  <view class="item-title">瑞划算</view>
+                  <view class="item-subtitle">LUCKIN POP·MINI</view>
+              </view>
+          </view>
+          <view class="menu-more-left">
+              <view bindtap="handleClickPopMore" class="menu-item" data-id="{{popId}}" id="btn_toPamll" style="background-image: url('{{menu.popImgUrl}}')">
+                  <view class="item-title">瑞幸潮品</view>
+                  <view class="item-subtitle">LUCKIN POP</view>
+              </view>
+          </view>
+        </view>
+    </view>
+  </view>
+  <!-- 为你推荐 -->
+  <template is="{{item.type}}" data="{{...item.secData}}" wx:for="{{finalData}}" wx:key="index"></template>
+</view>

@@ -1,0 +1,41 @@
+.video-screen{
+  width: 100%;
+}
+.video-danmu{
+  display: flex;
+  padding: 10rpx;
+}
+.video-danmu input{
+  width: 70%;
+  flex-grow: 1; /*扩张多余空间*/
+  height: 70rpx;
+  border: 1rpx solid #8F33CC;
+}
+.video-danmu button{
+  width: 30%;
+  font-size: 24rpx;
+  background: #8F33CC;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-list{
+  width: 100%;
+  padding: 10rpx;
+}
+.video-item{
+  width: 95%;
+  display: flex;
+  border-bottom: 1rpx solid #8F33CC;
+  margin: 10rpx;
+}
+.video-item image{
+  width: 40rpx;
+  height: 40rpx;
+  margin: 20rpx;
+}
+.video-item text{
+  flex-grow: 1;
+  margin: 20rpx;
+}

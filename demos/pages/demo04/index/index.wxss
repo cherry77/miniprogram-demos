@@ -1,0 +1,8 @@
+/* 幻灯片 */
+swiper{
+  width: 100%;
+  max-height: 400rpx;
+}
+swiper image{
+  width: 100%;
+}

@@ -1,0 +1,13 @@
+.news-detail{
+  padding: 10rpx;
+}
+.news-title{
+  padding: 10rpx 0;
+}
+.news-detail image{
+  width: 100%;
+  min-height: 400rpx;
+}
+.news-detail .date{
+  text-align: right;
+}

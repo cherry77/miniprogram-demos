@@ -1,0 +1,43 @@
+<!-- <template name="luckin-pop">
+    <view class="pop-box" wx:if="{{data&&data.length}}">
+        <view class="flex between">
+            <view class="title">{{title||'瑞幸潮品'}}
+<image class="sub-title-img" src="https://static.luckincoffeecdn.com/mini/images/home/ico_send_label.png"></image>
+            </view>
+            <view bindtap="handleClickPopMore" class="more" id="homePopMore">更多</view>
+        </view>
+        <view class="pop-container">
+            <view class="pop-list">
+                <view bindtap="handleClickPop" class="pop-list-item" data-id="{{item.productId}}" data-product="{{item}}" data-url="{{item.clickUrl}}" id="homePopDetail" wx:for="{{data}}" wx:key="key">
+                    <view class="pop-img-box">
+                        <image class="pop-picImg" src="{{item.defaultPicUrl}}"></image>
+                        <view class="saleStyle preSale" wx:if="{{item.saleType===1&&item.saleStartTime>0}}">
+                            <text>预售开始时间</text>
+                            <count-timer bind:timeOutHandler="timeOutHandler" initDuration="{{item.saleStartTime}}"></count-timer>
+                        </view>
+                        <view class="saleStyle activeSale" wx:elif="{{item.saleType===2&&item.saleStartTime>0}}">
+                            <text>开售剩余时间</text>
+                            <count-timer bind:timeOutHandler="timeOutHandler" initDuration="{{item.saleStartTime}}"></count-timer>
+                        </view>
+                    </view>
+                    <view class="info-box">
+                        <view class="name">{{item.name}}</view>
+                        <view class="ico-home-cart-box">
+                            <text class="price {{item.price&&item.salePrice&&'new'}}">￥{{item.salePrice||item.price}}<text class="old-price">{{item.salePrice&&item.price?'￥'+item.price:''}}</text>
+                            </text>
+                        </view>
+                        <view class="disflex">
+                            <view class="alreadySell">已售卖{{item.alreadySellNumber||0}}件</view>
+                            <block wx:if="{{!(item.saleStartTime>0)}}">
+                                <view catchtap="popDetailHandler" class="ico-home-cart" data-product="{{item}}" data-url="{{item.clickUrl}}" id="productAddHomePop" wx:if="{{!item.saleStockState}}">
+                                    <image class="" src="https://static.luckincoffeecdn.com/pmall/home/anchor/icon_home_pop_cart.png"></image>
+                                </view>
+                                <view class="ico-home-cart_none" wx:else>售罄</view>
+                            </block>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</template> -->

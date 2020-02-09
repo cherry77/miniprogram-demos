@@ -1,0 +1,35 @@
+<template name="home-guess-like">
+    <view class="guess" wx:if="{{data&&data.length}}">
+        <view class="flex between">
+            <view class="title">{{title||'猜你喜欢'}}</view>
+            <view bindtap="changeGuess" class="change" id="changeGuessHome">换一批</view>
+        </view>
+        <view class="productList flex">
+            <view bindtap="prodcutDetailHandler" class="productBox flex column {{index===1?'middleBox':''}}" data-index="{{index}}" data-pop="true" data-product="{{item}}" id="productDetailHome" wx:for="{{data}}" wx:key="productId">
+                <view class="img-box">
+                    <view class="discount_label" wx:if="{{(ab_homeGuess==2||ab_homeGuess==3)&&item.discountPrice&&item.initialPrice&&item.discountPrice!==item.initialPrice}}">
+              {{utils.formatDiscount(item.discountPrice/item.initialPrice)}}折
+            </view>
+                    <image class="productImg" src="{{item.defaultPicUrl}}"></image>
+                    <view class="img-title-bar">
+                        <view class="name ellipsis">{{item.name}}</view>
+                        <view class="subName ellipsis">{{item.enName}}</view>
+                    </view>
+                </view>
+                <view class="today-price-bar">
+                    <view class="priceBox flex between verticalcenter">
+                        <view class="price" wx:if="{{item.initialPrice===item.discountPrice}}">￥{{item.initialPrice}}</view>
+                        <view wx:else>
+                            <text class="disUnit">￥<text class="disPrice">{{item.discountPrice}}</text>
+                            </text>
+                            <text class="linePrice">￥<text class="linePrice">{{item.initialPrice}}</text>
+                            </text>
+                        </view>
+                        <image catchtap="prodcutDetailHandler" class="icon_add" data-index="{{index}}" data-product="{{item}}" id="productAddHome" src="https://static.luckincoffeecdn.com/mini/images/common/ico_add_coffee.png"></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>
+<!-- <wxs module="utils" src="../../../utils/pageutil.wxs" /> -->

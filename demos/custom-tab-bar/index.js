@@ -14,17 +14,6 @@ Component({
     selected: 0,
     color: "#bfbfbf",
     selectedColor: "#1296db",
-    // list: [{
-    //   pagePath: "/pages/demo04/index/index",
-    //   iconPath: "/pages/demo04/resource/images/home_un.png",
-    //   selectedIconPath: "/pages/demo04/resource/images/home.png",
-    //   text: "首页"
-    // }, {
-    //     pagePath: "/pages/demo04/mine/mine",
-    //     iconPath: "/pages/demo04/resource/images/mine_un.png",
-    //     selectedIconPath: "/pages/demo04/resource/images/mine.png",
-    //     text: "我的"
-    // }],
     list: [{
       pagePath: "/pages/demo04/index/index",
       iconPath: "/pages/demo04/resource/images/home_un.png",
@@ -40,7 +29,6 @@ Component({
   lifetimes: {
     attached: function () {
       // 在组件实例进入页面节点树时执行
-      console.log(this.getTabBar());
     },
     detached: function () {
       // 在组件实例被从页面节点树移除时执行

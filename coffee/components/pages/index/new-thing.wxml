@@ -1,0 +1,12 @@
+<template name="new-thing">
+    <view class="home-item-box" wx:if="data && data.length">
+        <view class="flex between">
+            <view class="title">{{title||'新鲜事'}}</view>
+        </view>
+        <swiper circular="true" class="new-thing-swiper" current="0" interval="1000" nextMargin="{{data&&data.length===2?'140rpx':'78rpx'}}" previousMargin="{{data&&data.length===2?'10rpx':'78rpx'}}">
+            <swiper-item class="new-thing-swiper-item" wx:for="{{data}}" wx:key="id">
+                <image bindtap="handleClickNewthing" class="wx-image" data-product="{{item}}" data-rank="{{index}}" data-url="{{item.weChatLink}}" id="homeNewthingDetail" mode="aspectFill" src="{{item.sourceUrl||'https://static.luckincoffeecdn.com/mini/images/home/img_home_default_hot.png'}}"></image>
+            </swiper-item>
+        </swiper>
+    </view>
+</template>
