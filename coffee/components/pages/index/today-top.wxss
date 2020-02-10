@@ -1,1 +1,54 @@
 /* components/pages/index/today-top.wxss */
+.guess{
+  height: 100%;
+  width: 95%;
+  margin: 10rpx 20rpx;
+  background: #fff;
+  border-radius: 20rpx;
+}
+.guess .title{
+  font-size: 28rpx;
+  margin: 20rpx;
+}
+.guess .change{
+  font-size: 22rpx;
+  color: #7682b6;
+  margin: 20rpx;
+}
+.productList{
+  width: 100%;
+  justify-content: space-around;
+}
+.productBox{
+  position: relative;
+  height: 100%;
+  border-radius: 20rpx;
+}
+.productImg{
+  width: 210rpx;
+  height: 210rpx;
+  border-radius: 10rpx;
+}
+.icon_add{
+  width: 40rpx;
+  height: 40rpx;
+}
+.img-title-bar{
+  position: absolute;
+  bottom: 60rpx;
+  left: 10rpx;
+  color: #fff;
+  font-size: 16rpx;
+}
+.today-price-bar{
+  height: 55rpx;
+}
+.priceBox .disUnit{
+  color: #ef4c51;
+  font-size: 22rpx;
+}
+.priceBox .linePrice{
+  font-size: 20rpx;
+  color: #959595; 
+  text-decoration: line-through;
+}

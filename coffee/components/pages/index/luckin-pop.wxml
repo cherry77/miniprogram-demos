@@ -1,10 +1,10 @@
-<!-- <template name="luckin-pop">
+<template name="luckin-pop">
     <view class="pop-box" wx:if="{{data&&data.length}}">
         <view class="flex between">
             <view class="title">{{title||'瑞幸潮品'}}
 <image class="sub-title-img" src="https://static.luckincoffeecdn.com/mini/images/home/ico_send_label.png"></image>
             </view>
-            <view bindtap="handleClickPopMore" class="more" id="homePopMore">更多</view>
+            <view bindtap="handleClickPopMore" class="more" id="homePopMore">更多></view>
         </view>
         <view class="pop-container">
             <view class="pop-list">
@@ -40,4 +40,4 @@
             </view>
         </view>
     </view>
-</template> -->
+</template>

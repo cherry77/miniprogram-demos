@@ -1,1 +1,66 @@
 /* components/pages/index/luckin-pop.wxss */
+.pop-box{
+  margin: 10rpx 20rpx;
+}
+.pop-box .title{
+  font-size: 28rpx;
+  margin: 20rpx;
+}
+.pop-box .more{
+  font-size: 22rpx;
+  color: #8f8f8f;
+  margin: 20rpx;
+}
+.sub-title-img{
+  width: 70rpx;
+  height: 30rpx;
+}
+.pop-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.pop-list-item{
+  width: 325rpx;
+  background: #fff;
+  margin-bottom: 10rpx;
+  border-radius: 10rpx;
+}
+.pop-picImg{
+  width: 325rpx;
+  height: 200rpx;
+  border-radius: 10rpx 10rpx 0 0;
+}
+.ico-home-cart image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.info-box{
+  padding: 10rpx;
+  box-sizing: border-box;
+}
+.info-box .name{
+  font-size: 24rpx;
+  margin-bottom: 20rpx;
+}
+.info-box .ico-home-cart-box{
+  margin-bottom: 20rpx;
+}
+.info-box .ico-home-cart-box .price{
+  font-size: 30rpx;
+  font-weight: 200;
+}
+.info-box .disflex{
+  display: flex;
+  justify-content: space-between;
+}
+.info-box .disflex .alreadySell{
+  font-size: 20rpx;
+  color: #8f8f8f;
+}
+.ico-home-cart_none{
+  font-size: 20rpx;
+  color: #8f8f8f;
+  background: #e5e5e5;
+  padding: 10rpx;
+}

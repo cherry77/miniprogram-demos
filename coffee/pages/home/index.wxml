@@ -5,7 +5,7 @@
   <!-- 轮播部分 -->
   <view class="banner-box" style="{{custom?'padding-top:'+custom.top+'px':''}}">
       <view class="banner-radius" >
-          <swiper autoplay="{{autoplay}}" bindchange="bannerChange" circular="true" class="banner-swiper-box" duration="{{duration}}" id="homeTopBanner" indicatorActiveColor="#fff" indicatorColor="rgba(255, 255, 255, 0.5)" indicatorDots="{{indicatorDots}}" interval="{{interval}}">
+          <swiper autoplay="{{autoplay}}" circular="true" class="banner-swiper-box" duration="{{duration}}" id="homeTopBanner" indicatorActiveColor="#fff" indicatorColor="rgba(255, 255, 255, 0.5)" indicatorDots="{{indicatorDots}}" interval="{{interval}}">
             <swiper-item wx:for="{{adPics}}" wx:key="index">
               <image src="{{item.sourceUrl}}"></image>
             </swiper-item>

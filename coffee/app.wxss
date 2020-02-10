@@ -8,3 +8,410 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 }  */
+.element::-webkit-scrollbar {
+    width: 0!important;
+}
+
+.element {
+    -ms-overflow-style: none;
+}
+
+.element {
+    overflow: -moz-scrollbars-none;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex.rowreverse {
+    flex-direction: row-reverse;
+}
+
+.flex.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex.right {
+    justify-content: right;
+}
+
+.flex.verticalcenter {
+    align-items: center;
+}
+
+.flex.hoscenter {
+    justify-content: center;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+
+.flex.between {
+    justify-content: space-between;
+}
+
+.flex.around {
+    justify-content: space-around;
+}
+
+.flex.wrap {
+    flex-wrap: wrap;
+}
+
+.flex__item {
+    flex: 1;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb10 {
+    margin-bottom: 10rpx;
+}
+
+.mt10 {
+    margin-top: 10rpx;
+}
+
+.mr10 {
+    margin-right: 10rpx;
+}
+
+.ml10 {
+    margin-left: 10rpx;
+}
+
+.mb20 {
+    margin-bottom: 20rpx;
+}
+
+.mt20 {
+    margin-top: 20rpx;
+}
+
+.mr20 {
+    margin-right: 20rpx;
+}
+
+.ml20 {
+    margin-left: 20rpx;
+}
+
+.m20 {
+    margin: 20rpx;
+}
+
+.mb30 {
+    margin-bottom: 30rpx;
+}
+
+.mt30 {
+    margin-top: 30rpx;
+}
+
+.mr30 {
+    margin-right: 30rpx;
+}
+
+.ml30 {
+    margin-left: 30rpx;
+}
+
+.m30 {
+    margin: 30rpx;
+}
+
+.mb40 {
+    margin-bottom: 40rpx;
+}
+
+.mt40 {
+    margin-top: 40rpx;
+}
+
+.mr40 {
+    margin-right: 40rpx;
+}
+
+.ml40 {
+    margin-left: 40rpx;
+}
+
+.m40 {
+    margin: 40rpx;
+}
+
+.f20 {
+    font-size: 20rpx;
+}
+
+.f22 {
+    font-size: 22rpx;
+}
+
+.f24 {
+    font-size: 24rpx;
+}
+
+.f26 {
+    font-size: 26rpx;
+}
+
+.f28 {
+    font-size: 28rpx;
+}
+
+.f30 {
+    font-size: 30rpx;
+}
+
+.f32 {
+    font-size: 32rpx;
+}
+
+.f34 {
+    font-size: 34rpx;
+}
+
+.f36 {
+    font-size: 36rpx;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.noBorder {
+    border: none!important;
+}
+
+.border-blue {
+    border: 1rpx solid #7CA7D2;
+}
+
+.bg-blue {
+    background-color: #7CA7D2;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.color-blue {
+    color: #7CA7D2;
+}
+
+.color-gray6 {
+    color: #666;
+}
+
+.color-gray9 {
+    color: #999;
+}
+
+.color-black {
+    color: #333;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.wp100 {
+    width: 100%;
+}
+
+.hp100 {
+    height: 100%;
+}
+
+.noBorder {
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    border: none;
+}
+
+.arrow-right {
+    background: url("https://static.luckincoffeecdn.com/mini/images/common/arrow-right.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.twoEllipsis {
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.op3 {
+    opacity: 0.3;
+}
+
+.op5 {
+    opacity: 0.5;
+}
+
+[class*=btn-active] {
+    opacity: .6;
+}
+
+[class*=btn-active-translate] {
+    opacity: .6;
+    transform: translate(1rpx,1rpx);
+}
+
+[class*=animation-] {
+    animation-duration: .3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
+.animation-reverse {
+    animation-direction: reverse;
+}
+
+.animation-slide-bottom {
+    animation-name: slide-bottom;
+}
+
+.animation-slide-top {
+    animation-name: slide-top;
+}
+
+@-webkit-keyframes slide-bottom {
+    0% {
+        transform: translateY(100vh);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-bottom {
+    0% {
+        transform: translateY(100vh);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes slide-top {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes slide-top {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.guide-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.guide-attention {
+    display: flex;
+    position: absolute;
+    top: 130rpx;
+    right: 48rpx;
+    width: 594rpx;
+    height: 64rpx;
+    background-color: #fff;
+    border-radius: 36rpx;
+    z-index: 3;
+    text-align: center;
+    box-shadow: 0 10rpx 20rpx 0 rgba(0,0,0,.12);
+    font-weight: bold;
+}
+
+.restTop {
+    top: 180rpx;
+}
+
+.guide-attention .guide-float {
+    flex: 1;
+    color: #333;
+    font-size: 24rpx;
+    line-height: 64rpx;
+}
+
+.guide-attention .text-warning {
+    color: #E06E12;
+}
+
+.ico_trangle {
+    position: absolute;
+    top: -8rpx;
+    right: 84rpx;
+    width: 0;
+    height: 0;
+    border-bottom: 14rpx solid #fff;
+    border-left: 12rpx solid transparent;
+    border-right: 12rpx solid transparent;
+    z-index: 3;
+}
+
+.ico_close-bar {
+    width: 40rpx;
+}
+
+.ico_close {
+    margin-top: 26rpx;
+    margin-right: 36rpx;
+    width: 14.8rpx;
+    height: 14.8rpx;
+}
+
+.arrow::after {
+    content: ' ';
+    width: 10rpx;
+    height: 10rpx;
+    border-right: 3rpx solid #7ca7d2;
+    border-top: 3rpx solid #7ca7d2;
+    position: absolute;
+    right: 20rpx;
+    top: 12rpx;
+    transform: rotate(45deg);
+}
+
+.order_common_btn {
+    width: 176rpx;
+    height: 56rpx;
+    line-height: 56rpx;
+    box-sizing: border-box;
+    border: 2rpx solid #E5E5E5;
+    border-radius: 32rpx;
+    text-align: center;
+    font-size: 26rpx;
+    color: #666666;
+}
